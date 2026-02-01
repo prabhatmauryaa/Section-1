@@ -4,10 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    
+    <style>
+
+        *{
+            font-family: Roboto;
+        }
+
+        .Form{
+            width: 25%;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 3px 5px 10px 0 black;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/114/105/original/blue-line-particles-with-lensflare-background-free-video.jpg');
+            background-repeat: no-repeat;
+            background-color: cover;
+            background-position: bottom;
+            
+            
+        }
+
+        .heading{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-bottom: 30px;
+
+        }
+        
+        .btn-signup{
+            width: 100%;
+            padding: 10px;
+            background-color: aqua;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-link{
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div>
-        <h3>Sign-up Form</h3>
+    <div class="Form">
+        <h3 class="heading">Sign-up Form</h3>
+
+        <form>
+
+            <label for="">User Name</label>
+            <input type="text" class="text-input">
+            
+            <label for="">Email Address</label>
+            <input type="email" class="text-input">
+            
+            <label for="">Password</label>
+            <input type="password" class="text-input">
+            
+            <label for="">Confirm Password</label>
+            <input type="password" class="text-input">
+
+            
+            <button class="btn-signup">Sign Up</button>
+
+            <a href="#" class="login-link">Alredy have an account? Login here</a>
+
+        </form>
     </div>
 </body>
 </html>
